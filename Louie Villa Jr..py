@@ -6,11 +6,7 @@ def rect_area():
 #Function 2
 # Returns Surface Area of Rectangular Solid
 def rect_surface_area(length,width,height):
-    side_1 = rect_area()
-    side_2 = rect_area()
-    side_3 = rect_area()
-    total_area = 2 * (side_1 + side_2 + side_3)
-    return total_area
+     return 2 *(rect_area() + height*length+width*height)
 
 # Request the dimension of a solid rectangular object
 
