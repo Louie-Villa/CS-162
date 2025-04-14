@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plot
+# set up your lists
+numlist = [8, 6, 5, 3]
+namelist = ['freshmen', 'sophomores', 'juniors', 'seniors']
+colorlist = ['grey', 'white', 'pink', 'teal' ]
+explodelist = [0.1, 0.0, 0.0, 0.0]
+# make the pie chart
+"""messing about with some different commands, added hatch to sophomores, changed label colors, added some shadow, and changed it to one decimal place. I changed the value of '%1.1f%%' and im not making sense to how it works."""
+plot.pie(numlist, labels=namelist, autopct='%1.1f%%', colors=colorlist, hatch=['','o','',''],shadow=True,
+    	explode = explodelist, startangle = 120)
+plot.axis('equal')
+plot.savefig('piechart.png')
