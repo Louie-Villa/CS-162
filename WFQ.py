@@ -1,7 +1,7 @@
-#defining functions
+input_packets = open("/Users/louie/PycharmProjects/CS 162 Wk 1/input queue-1.txt")
 def dequeue_premium():
     dequeue_premium_counter = 0
-    while dequeue_premium_counter < 3:
+    while dequeue_premium_counter < 3 and len(queue_premium) != 0:
         element1 = queue_premium.pop(0)
         print("Dequeue: ", element1)
         dequeue_premium_counter += 1
@@ -26,11 +26,11 @@ def dequeue_economy():
         print("Queue_Economy is empty")
 
 #List of names with priority: "P,S,E"
-input_packets = ["S Mary", "P Dee", "P Dee", "P Dee", "E Eileen", \
-"E Mike", "E Joe", "P Dee", "E Vicky", "E George",\
-"P Dee", "P Joe", "E Sally", "P Joe", "S Pete",
-"P Dee", "S Bill", "S Chase", "E Price", "P Dee",\
-"E Sue"]
+#input_packets = ["S Mary", "P Dee", "P Dee", "P Dee", "E Eileen", \
+#"E Mike", "E Joe", "P Dee", "E Vicky", "E George",\
+#"P Dee", "P Joe", "E Sally", "P Joe", "S Pete",
+#"P Dee", "S Bill", "S Chase", "E Price", "P Dee",\
+#"E Sue"]
 #Created containers for entries in input_packets that organize by letter in index 0
 queue_premium = []
 queue_standard = []
